@@ -2,10 +2,7 @@ package com.mirim9.dakku.entity;
 
 import lombok.Getter;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
 
 @Entity
 @Getter
@@ -18,7 +15,11 @@ public class Reply extends BaseEntity{
 
     private int depth;
 
+    @ManyToOne
+    @JoinColumn(name ="diary_id")
     private Diary diary;
 
+    @ManyToOne
+    @JoinColumn(name ="member_id")
     private Member member;
 }

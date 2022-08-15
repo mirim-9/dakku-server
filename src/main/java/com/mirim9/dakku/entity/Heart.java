@@ -12,7 +12,11 @@ public class Heart extends BaseEntity{
     @GeneratedValue(strategy= GenerationType.AUTO)
     private Long heartId;
 
+    @ManyToOne
+    @JoinColumn(name ="member_id")
     private Member member;
 
+    @ManyToOne
+    @JoinColumn(name ="diary_id")
     private Diary diary;
 }

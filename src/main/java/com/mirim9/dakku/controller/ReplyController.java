@@ -1,6 +1,6 @@
 package com.mirim9.dakku.controller;
 
-import com.mirim9.dakku.entity.Reply;
+import com.mirim9.dakku.service.ReplyService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -9,5 +9,5 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("api/replies")
 @RequiredArgsConstructor
 public class ReplyController {
-    private final Reply reply;
+    private final ReplyService replyService;
 }

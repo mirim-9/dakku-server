@@ -21,5 +21,7 @@ public class Attachment extends BaseEntity{
     @NotBlank
     private String fileS3Name;
 
+    @ManyToOne
+    @JoinColumn(name ="member_id")
     private Member member;
 }

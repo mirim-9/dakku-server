@@ -5,6 +5,7 @@ import lombok.Getter;
 import javax.persistence.*;
 import javax.validation.constraints.Email;
 import javax.validation.constraints.NotBlank;
+import java.util.ArrayList;
 import java.util.List;
 
 @Entity
@@ -29,5 +30,5 @@ public class Member extends BaseEntity {
 			mappedBy = "member",
 			fetch = FetchType.LAZY
 	)
-	private List<Diary> diaryList;
+	private List<Diary> diaryList = new ArrayList<>();
 }
