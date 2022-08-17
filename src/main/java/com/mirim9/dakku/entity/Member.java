@@ -1,15 +1,18 @@
 package com.mirim9.dakku.entity;
 
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 
-import javax.persistence.*;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
 import javax.validation.constraints.Email;
 import javax.validation.constraints.NotBlank;
-import java.util.ArrayList;
-import java.util.List;
 
 @Entity
 @Getter
+@NoArgsConstructor
 public class Member extends BaseEntity {
 
 	@Id
@@ -25,10 +28,4 @@ public class Member extends BaseEntity {
 
 	@NotBlank
 	private String password;
-
-	@OneToMany(
-			mappedBy = "member",
-			fetch = FetchType.LAZY
-	)
-	private List<Diary> diaryList = new ArrayList<>();
 }

@@ -1,11 +1,15 @@
 package com.mirim9.dakku.dto;
 
 import com.mirim9.dakku.entity.Member;
+import lombok.AllArgsConstructor;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 @Getter
 @Setter
+@NoArgsConstructor
+@AllArgsConstructor
 public class AttachmentDto extends BaseEntityDto{
 
     private Long attachmentId;
@@ -16,5 +20,5 @@ public class AttachmentDto extends BaseEntityDto{
 
     private String fileS3Name;
 
-    private MemberDto memberDto;
+    private MemberDto member;
 }

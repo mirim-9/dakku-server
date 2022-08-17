@@ -4,6 +4,10 @@ import com.mirim9.dakku.dto.ReplyDto;
 import com.mirim9.dakku.entity.Reply;
 import org.mapstruct.Mapper;
 
+import java.util.List;
+
 @Mapper(componentModel = "spring", config = EntityMapper.class)
 public interface ReplyMapper extends EntityMapper<ReplyDto, Reply> {
+
 }
+

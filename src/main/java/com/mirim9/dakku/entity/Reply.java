@@ -1,11 +1,13 @@
 package com.mirim9.dakku.entity;
 
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
 
 @Entity
 @Getter
+@NoArgsConstructor
 public class Reply extends BaseEntity{
     @Id
     @GeneratedValue(strategy= GenerationType.AUTO)

@@ -1,12 +1,13 @@
 package com.mirim9.dakku.entity;
 
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
-import javax.validation.constraints.NotBlank;
 
 @Entity
 @Getter
+@NoArgsConstructor
 public class Heart extends BaseEntity{
     @Id
     @GeneratedValue(strategy= GenerationType.AUTO)

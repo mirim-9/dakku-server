@@ -1,6 +1,7 @@
 package com.mirim9.dakku.entity;
 
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotBlank;
@@ -9,6 +10,7 @@ import java.util.List;
 
 @Entity
 @Getter
+@NoArgsConstructor
 public class Diary extends BaseEntity{
     @Id
     @GeneratedValue(strategy= GenerationType.AUTO)
