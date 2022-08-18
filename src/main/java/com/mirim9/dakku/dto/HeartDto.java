@@ -9,11 +9,9 @@ import lombok.Setter;
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-public class HeartDto extends BaseEntityDto{
+public class HeartDto extends BaseEntityDto {
 
     private Long heartId;
 
     private MemberDto member;
-
-    private DiaryDto diary;
 }

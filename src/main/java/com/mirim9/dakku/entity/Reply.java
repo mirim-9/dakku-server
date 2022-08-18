@@ -8,9 +8,9 @@ import javax.persistence.*;
 @Entity
 @Getter
 @NoArgsConstructor
-public class Reply extends BaseEntity{
+public class Reply extends BaseEntity {
     @Id
-    @GeneratedValue(strategy= GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private Long replyId;
 
     private String content;
@@ -18,10 +18,10 @@ public class Reply extends BaseEntity{
     private int depth;
 
     @ManyToOne
-    @JoinColumn(name ="diary_id")
+    @JoinColumn(name = "diary_id")
     private Diary diary;
 
     @ManyToOne
-    @JoinColumn(name ="member_id")
+    @JoinColumn(name = "member_id")
     private Member member;
 }

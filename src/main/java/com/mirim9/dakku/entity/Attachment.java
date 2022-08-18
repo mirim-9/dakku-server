@@ -9,9 +9,9 @@ import javax.validation.constraints.NotBlank;
 @Entity
 @Getter
 @NoArgsConstructor
-public class Attachment extends BaseEntity{
+public class Attachment extends BaseEntity {
     @Id
-    @GeneratedValue(strategy= GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private Long attachmentId;
 
     @NotBlank
@@ -24,6 +24,6 @@ public class Attachment extends BaseEntity{
     private String fileS3Name;
 
     @ManyToOne
-    @JoinColumn(name ="member_id")
+    @JoinColumn(name = "member_id")
     private Member member;
 }

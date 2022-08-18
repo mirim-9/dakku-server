@@ -5,14 +5,11 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-import java.util.ArrayList;
-import java.util.List;
-
 @Getter
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-public class MemberDto extends BaseEntityDto{
+public class MemberDto extends BaseEntityDto {
     private Long memberId;
 
     private String nickname;
@@ -20,7 +17,4 @@ public class MemberDto extends BaseEntityDto{
     private String email;
 
     private String password;
-
-    private List<DiaryDto> diaryList = new ArrayList<>();
-
 }

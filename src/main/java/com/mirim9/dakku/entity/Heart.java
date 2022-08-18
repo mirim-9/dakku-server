@@ -8,16 +8,16 @@ import javax.persistence.*;
 @Entity
 @Getter
 @NoArgsConstructor
-public class Heart extends BaseEntity{
+public class Heart extends BaseEntity {
     @Id
-    @GeneratedValue(strategy= GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private Long heartId;
 
     @ManyToOne
-    @JoinColumn(name ="member_id")
+    @JoinColumn(name = "member_id")
     private Member member;
 
     @ManyToOne
-    @JoinColumn(name ="diary_id")
+    @JoinColumn(name = "diary_id")
     private Diary diary;
 }

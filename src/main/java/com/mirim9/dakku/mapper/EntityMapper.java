@@ -8,7 +8,7 @@ import org.mapstruct.ReportingPolicy;
 import java.util.List;
 
 @MapperConfig(unmappedTargetPolicy = ReportingPolicy.IGNORE)
-public interface EntityMapper <D, E> {
+public interface EntityMapper<D, E> {
 
     E toEntity(D dto);
 

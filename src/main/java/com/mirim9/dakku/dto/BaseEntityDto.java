@@ -9,9 +9,9 @@ import java.time.LocalDateTime;
 @Setter
 public class BaseEntityDto {
 
-//    private String createdBy;
+    //    private String createdBy;
     private LocalDateTime createDateTime;
 
-//    private String modifiedBy;
+    //    private String modifiedBy;
     private LocalDateTime modifyDateTime;
 }

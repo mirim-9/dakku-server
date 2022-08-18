@@ -15,17 +15,17 @@ import javax.validation.constraints.NotBlank;
 @NoArgsConstructor
 public class Member extends BaseEntity {
 
-	@Id
-	@GeneratedValue(strategy=GenerationType.AUTO)
-	private Long memberId;
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    private Long memberId;
 
-	@NotBlank
-	private String nickname;
+    @NotBlank
+    private String nickname;
 
-	@Email
-	@NotBlank
-	private String email;
+    @Email
+    @NotBlank
+    private String email;
 
-	@NotBlank
-	private String password;
+    @NotBlank
+    private String password;
 }

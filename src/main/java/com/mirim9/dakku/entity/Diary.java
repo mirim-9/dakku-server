@@ -11,9 +11,9 @@ import java.util.List;
 @Entity
 @Getter
 @NoArgsConstructor
-public class Diary extends BaseEntity{
+public class Diary extends BaseEntity {
     @Id
-    @GeneratedValue(strategy= GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private Long diaryId;
 
     @NotBlank
@@ -26,7 +26,7 @@ public class Diary extends BaseEntity{
     private String fileS3Name;
 
     @ManyToOne
-    @JoinColumn(name ="member_id")
+    @JoinColumn(name = "member_id")
     private Member member;
 
     @OneToMany(

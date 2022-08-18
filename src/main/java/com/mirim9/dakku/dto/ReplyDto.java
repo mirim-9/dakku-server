@@ -14,7 +14,5 @@ public class ReplyDto extends BaseEntityDto {
 
     private int depth;
 
-    private DiaryDto diary;
-
     private MemberDto member;
 }

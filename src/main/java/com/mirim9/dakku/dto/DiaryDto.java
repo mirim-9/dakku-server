@@ -12,7 +12,7 @@ import java.util.List;
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-public class DiaryDto extends BaseEntityDto{
+public class DiaryDto extends BaseEntityDto {
     private Long diaryId;
 
     private String title;
