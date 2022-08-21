@@ -5,6 +5,9 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
+import java.util.Collections;
+import java.util.List;
+
 @Getter
 @Setter
 @NoArgsConstructor
@@ -17,4 +20,6 @@ public class MemberDto extends BaseEntityDto {
     private String email;
 
     private String password;
+
+    private List<String> roles = Collections.singletonList("ROLE_USER");
 }
